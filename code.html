@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam Registration System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: #ffffff;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #34495e;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Exam Registration Form</h2>
+    <form action="#" method="POST">
+        
+        <div class="form-group">
+            <label for="studentName">Full Name</label>
+            <input type="text" id="studentName" name="studentName" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label for="rollNumber">Roll Number</label>
+            <input type="text" id="rollNumber" name="rollNumber" required placeholder="e.g., 25B81A6633">
+        </div>
+
+        <div class="form-group">
+            <label for="email">College Email ID</label>
+            <input type="email" id="email" name="email" required placeholder="Enter official email">
+        </div>
+
+        <div class="form-group">
+            <label for="course">Select Course / Exam</label>
+            <select id="course" name="course" required>
+                <option value="">-- Choose an Exam --</option>
+                <option value="se">Software Engineering</option>
+                <option value="dbms">Database Management Systems</option>
+                <option value="java">Java Programming</option>
+                <option value="os">Operating Systems</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter 10-digit mobile number">
+        </div>
+
+        <button type="submit">Submit Registration</button>
+    </form>
+</div>
+
+<footer>
+    Academic Demonstration Project | SCM Lab Experiment
+</footer>
+
+</body>
+</html>
